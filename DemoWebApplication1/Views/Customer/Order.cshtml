@@ -1,0 +1,36 @@
+﻿@model DemoWebApplication1.Models.Order
+
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h2>Order</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.orderDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.orderDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.customerID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.customerID)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
